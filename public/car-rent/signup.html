@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="main.html">Zoom Car</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <form id="frm">
+      <div class="form-group">
+        <label for="firstname">Firstname:</label>
+        <input type="text" class="form-control" id="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Lastname:</label>
+        <input type="text" class="form-control" id="lastname">
+      </div>
+      <div class="form-group">
+        <label for="userid">Userid:</label>
+        <input type="text" class="form-control" id="uid">
+      </div>
+
+      <label for="age">Is Age > 18?</label>
+
+      <div class="checkbox">
+
+        <label><input type="checkbox" value="yes" id="agree">Yes</label>
+      </div>
+      <label for="drive">Authority to Drive</label>
+      <select id="authority-to-drive" class="form-control m-2">
+        <option value="LMV">LMV</option>
+        <option value="Bike">Bike</option>
+      </select>
+      <input type="submit" class="btn btn-default">Submit</input>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/rent.js"></script>
+</body>
+
+</html>
